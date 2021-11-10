@@ -16,19 +16,18 @@ public class Main {
     public static void main(String[] args) throws Exception {
 //        testStat();
 //
-        boolean isTesting = true;
-        int matrixSize = 2000;
-        int[][] b = Matrix.randomMatrix(matrixSize, matrixSize, isTesting);
-        testMatrix(b, matrixSize, isTesting);
-        testPrevious(b, matrixSize, isTesting);
+//        boolean isTesting = true;
+//        int matrixSize = 2000;
+//        int[][] b = Matrix.randomMatrix(matrixSize, matrixSize, isTesting);
+//        testMatrix(b, matrixSize, isTesting);
+//        testPrevious(b, matrixSize, isTesting);
 
 //        testSearchSameWords();
 //
-//        testSearchStatementInDocuments();
+        testSearchStatementInDocuments();
     }
 
     public static void testStat() {
-//        Statistic lengthCount = new Statistic(new File("src/FourthLab/calculate_statistic/test_text.txt"));
         Statistic lengthCount = new Statistic(new File("src/main/java/txt/architectingmodernjavaeeapplications.txt"));
 
         lengthCount.calculateOneThread();
@@ -78,10 +77,8 @@ public class Main {
     }
 
     public static void testSearchStatementInDocuments() {
-//        String searchedStatement = "you were there";
         String searchedStatement = "code program software application programmer algorithm";
         File file1 = new File("src/main/java/searchWord/test");
-//        File file2 = new File("src/FourthLab/search_word/test/new_test.txt");
 
         SearchStatement searchStatement = new SearchStatement(searchedStatement, file1);
 
